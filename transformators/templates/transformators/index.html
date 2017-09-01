@@ -1,0 +1,35 @@
+{% load static %}
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta lang="ru">
+  <title>Меню</title>
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+
+<body>
+	<table align="center" width="100%">
+		<tr>
+			<td align="center"><h1>Электронный опорный конспект по теме<br> 
+				"Устройство и рабочий процесс трансформатора"</h1></td>
+		</tr>
+	</table>
+  <div class="parent">
+    <div class="inner">
+      <div class="block">
+          <table class="top-menu" id="nav" cellspacing="0">
+              <tr>
+                  <td title="Теория"><a href="{% url 'transformators:pages' %}"><img src="{% static 'pictures/handyicon.png' %}" alt="Теория" width="200" height="200"></a></td>
+                  <td title="Практика"><a href="{% url 'transformators:tests' %}"><img src="{% static 'pictures/Anonymous_Architetto_--_Blocco_notes.png' %}" width="200" height="200"></a></td>
+              </tr>
+              <tr>
+                  <td title="Справка"><a href="{% url 'transformators:help' %}"><img src="{% static 'pictures/w256h2561339195771Help256x256.png' %}" width="200" height="200"></a></td>
+                  <td title="О программе"><a href="{% url 'transformators:about' %}"><img src="{% static 'pictures/w256h2561348757719Info.png' %}" width="200" height="200"></a>
+				  </td>
+              </tr>
+          </table>
+      </div>
+    </div>
+  </div>
+  <a href="/admin" title="Войти как администратор" class="topbutton"><img src="{% static 'pictures/home.png' %}" width="15%" height="15%"></a>
+</body>

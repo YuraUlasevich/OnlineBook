@@ -1,0 +1,129 @@
+{% load static %}
+<!doctype html>
+<head>
+	<meta lang="ru">
+	<title>Теория</title>
+	<meta charset="utf-8">
+    <link href="{% static 'css/th2.css' %}" rel="stylesheet"  >
+</head>
+<body>
+    <table class="first"  width="100%" cellspacing="0">
+		<td id="but2"  width="20%" bgcolor="#949494" >
+			<a id="con" href="{% url 'transformators:pages' %}">
+				<table align="center">
+					<td><p> <font size="5">Назад</font></p></td>
+				</table>
+			</a>
+		</td>
+		<td   width="60%" align="center" bgcolor="#949494">
+			<h1 style="color:#7fffd4">Трансформаторы</h1>     
+			<h1 style="color:#7fffd4">Классификация трансформаторов</h1>
+		</td>
+		<td  id="but2" width="20%" bgcolor="#949494">
+				<a id="con" href="{% url 'transformators:tests' %}">
+					<table>	
+						<td><p> <font size="5">Практика</font></p></td>
+					</table>
+				</a>
+		</td>
+	</table>
+	<table height="20px"></table>
+	<table border="1"  width="70%">
+		<tr bgcolor=" #FFEB73" >
+			<td colspan="5" align="center"><a class="imagetip" href="{% static 'pictures/ris.0.jpg' %}" target="_blank">Трансформаторы<span><img class="alignnone" src="{% static 'pictures/ris.0.jpg' %}" width="100px" heigth="100px"/></span></a></td>
+		</tr>
+		<tr>
+			<td id="top">
+                <p align="justify">
+                    По назначению:
+                        <ul>
+                            <li><a class="imagetip"  href="{% static 'pictures/ris.1.jpg' %}" target="_blank">силовые;<span><img class="alignnone" src="{% static 'pictures/ris.1.jpg' %}" width="100px" height="100px" /></span></a>
+							</li>
+                            <li>cпециального назанчения(<a class="imagetip" href="{% static 'pictures/ris.5.jpg' %}" target="_blank">измерительные<span><img class="alignnone" src="{% static 'pictures/ris.5.jpg' %}" width="100px" height="100px" /></span></a>, <a class="imagetip" href="{% static 'pictures/ris.6.jpg' %}" target="_blank">сварочные<span><img class="alignnone" src="{% static 'pictures/ris.1.jpg' %}""{% static 'pictures/ris.6.jpg' %}" width="100px" height="100px" /></span></a>,<a class="imagetip" href="{% static 'pictures/ris.2.png' %}" target="_blank">автотрансформатор<span><img class="alignnone" src="{% static 'pictures/ris.2.png' %}" height="100px" width="100px" /></span></a>).
+							</li>
+                        </ul>
+                </p>
+			</td>
+			<td id="top">
+                <p  align="justify">
+                    По числу трансформируемых фаз:
+                        <ul>
+                            <li><a class="imagetip" href="{% static 'pictures/ris.10.jpg' %}" target="_blank">однофазные;<span><img class="alignnone" src="{% static 'pictures/ris.10.jpg' %}" height="100px" width="100px" /></span></a></li>
+                            <li><a class="imagetip" href="{% static 'pictures/ris.11.jpg' %}" target="_blank">трёхфазные<span><img class="alignnone" src="{% static 'pictures/ris.11.jpg' %}" height="100px" width="100px" /></span></a>.</li>
+                        </ul>
+                </p>
+            </td>
+			<td id="top">
+                <p  align="justify">
+                    По числу обмоток на одну фазу:
+                        <ul>
+                            <li><a class="imagetip" href="{% static 'pictures/ris.7.jpg' %}" target="_blank">однообмоточные<span><img class="alignnone" src="{% static 'pictures/ris.7.jpg' %}" height="100px" width="100px" /></span></a>;</li>
+                            <li><a class="imagetip" href="{% static 'pictures/ris.8.jpg' %}" target="_blank">двухобмоточные<span><img class="alignnone" src="{% static 'pictures/ris.8.jpg' %}" height="100px" width="100px" /></span></a>;</li>
+                            <li><a class="imagetip" href="{% static 'pictures/ris.9.png' %}" target="_blank">многообмоточные<span><img class="alignnone" src="{% static 'pictures/ris.9.png' %}" height="100px" width="100px" /></span></a>.</li>
+                        </ul>
+                </p>
+            </td>
+			<td id="top">
+                <p  align="justify">
+                        По спообу:
+                        <ul>
+                            <li><a class="imagetip" href="{% static 'pictures/ris.20.jpg' %}" target="_blank">воздушные<span><img class="alignnone" src="{% static 'pictures/ris.20.jpg' %}" height="100px" width="100px" /></span></a>;</li>
+                            <li><a class="imagetip" href="{% static 'pictures/ris.13.jpg' %}" target="_blank">маслянные<span><img class="alignnone" src="{% static 'pictures/ris.13.jpg' %}" width="100px" height="100px" /></span></a>.</li>
+                        </ul>
+
+                </p>
+            </td>
+			<td id="top">
+                <p  align="justify">
+                    По типу сердечника:
+                        <ul>
+                            <li><a class="imagetip" href="{% static 'pictures/19.jpg' %}" target="_blank">стержневой<span><img class="alignnone" src="{% static 'pictures/19.jpg' %}" height="100px" width="100px" /></span></a>;</li>
+                            <li><a class="imagetip" href="{% static 'pictures/ris.15.jpg' %}" target="_blank">броневой<span><img class="alignnone" src="{% static 'pictures/ris.15.jpg' %}" height="100px" width="100px" /></span></a>;</li>
+                            <li><a class="imagetip" href="{% static 'pictures/ris.12.jpg' %}" target="_blank">бронестержневой<span><img class="alignnone" src="{% static 'pictures/ris.12.jpg' %}" height="100px" width="100px" /></span></a>;</li>
+                            <li><a class="imagetip" href="{% static 'pictures/ris.16.jpg' %}" target="_blank">троидальный<span><img class="alignnone" src="{% static 'pictures/ris.16.jpg' %}" width="100px" height="100px" /></span></a>.</li>
+                        </ul>
+
+                </p>
+            </td>
+		</tr>
+	</table>
+    <table height="20px"></table>
+	<table  width="70%" >
+		<td width="70%" align="center" bgcolor="#949494">
+			<h2 style="color:#7fffd4">Принцип действия трансформатора</h2>
+		</td>
+    </table>
+    <table height="20px"></table>
+    <table border="1"  width="70%">
+        <tr bgcolor=" #FFEB73">
+            <td align="center">Схема однофазного трансформатора</td>
+            <td align="center">Принцип действия</td>
+            <td align="center">Основные соотношения</td>
+        </tr>
+        <tr>
+            <td id="top"><a class="imagetip" href="{% static 'pictures/ch2.png' %}" target="_blank"><img src="{% static 'pictures/ch2.png' %}" width="200px" height="100px"><span><img src="{% static 'pictures/ch2.png' %}" width="200px" height="100px"></span></a></td>
+            <td id="top">
+                <p align="justify">
+                    Основан на явлении электромагнитной индукции. При подключении первичной обмотки c количеством витков w1 к источнику переменного напряжения u1 через неё начинает протекать переменный ток i1 и вокруг обмотки образуется переменное магнитное поле. Это поле создает в первичной обмотке ЭДС самоиндукции Е1. Основная часть переменного магнитного потока Ф замыкается по магнитопроводу, пересекает витки вторичной обмотки и создает в них ЭДС взаимоиндукции Е2.
+                </p>
+                <p align="jastify">
+                    При подключении нагрузки во вторичной обмотке появится ток i2 и на выводах вторичной обмотки установится напряжение u2.
+                </p>
+            </td>
+            <td id="top">
+                
+                Действующие значения ЭДС:
+                <ul>
+                    <li>Е1 = 4,44fw1Фm= 4,44fw1BmQст</li>
+                    <li>Е2 = 4,44fw2Фm= 4,44fw2BmQст,</li>
+                </ul>
+                <p align="justify">
+                 где f – частота тока в сети; w1 и w2 – число витков в обмотках; Фm – амплитудное значение основного магнитного потока; Вm – амплитудное значение индукции в сердечнике магнитопровода; Qст – площадь поперечного сечения сердечника.<br>
+                 Коэффициент трансформации:
+                 <img src="{% static 'pictures/f1.png' %}" align="center">
+                </p>
+            </td>
+        </tr>
+    </table>
+    <table height="20px"></table>
+</body>

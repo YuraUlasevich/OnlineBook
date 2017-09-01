@@ -1,0 +1,96 @@
+{% load static %}
+<!doctype html>
+<head>
+    <meta lang="ru">
+    <title>Теория</title>
+    <meta charset="utf-8">
+     <link href="{% static 'css/th2.css' %}" rel="stylesheet">
+</head>
+<body>
+    <table class="first" cellspacing="0"  width="100%">
+		<td id="but2"  width="20%" bgcolor="#949494" >
+			<a id="con" href="{% url 'transformators:pages' %}">
+				<table align="center">
+					<td><p> <font size="5">Назад</font></p></td>
+				</table>
+			</a>
+		</td>
+		<td   width="60%" align="center" bgcolor="#949494">
+			<h1 style="color:#7fffd4">Трансформаторы</h1>     
+			<h1 style="color:#7fffd4">Потери мощности и КПД трансформатора</h1>
+		</td>
+		<td  id="but2" width="20%" bgcolor="#949494">
+				<a id="con" href="{% url 'transformators:tests' %}">
+					<table>	
+						<td><p> <font size="5">Практика</font></p></td>
+					</table>
+				</a>
+		</td>
+	</table>
+    <table height="20px"></table>
+	<table border="2"  align="center" width="90%">
+		<tr bgcolor=" #FFEB73"> 
+			<td align="center">Наименование потерь</td>
+            <td align="center">Место возникновения</td>
+            <td align="center">Причина возникновения</td>
+			<td align="center">Факторы, оказывающие влияние на величину потерь</td>
+			<td align="center">Способ определения</td>
+			<td align="center">Схема и условия проведения опыта</td>
+        </tr>
+		<tr>
+			<td>Электрические потери мощности<br>
+				<img src="{% static 'pictures/f14.png' %}">
+			</td>
+			<td>Обмотки трансформатора<br>	
+			</td>
+			<td>Нагрев проводников при прохождении по ним электрического тока</td>
+			<td>Сила тока в обмотках (нагрузка) и величина сопротивлений обмоток</td>
+			<td>Опыт короткого замыкания</td>
+			<td align="center">
+				 <a class="imagetip" href="{% static 'pictures/ch8.png' %}" target="_blank"><img src="{% static 'pictures/ch8.png' %}" width="200px" height="100px"></a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table border="1">
+					<tr>
+						<td>Магнитные потери мощности ΔРм = Р0</td>
+						<td>
+							<table border="1">
+								<tr>
+									<td>Потери на вихревые токи</td>
+								</tr>
+								<tr>
+									<td>Потери на гистерезис
+(на пере-магничи-вание)
+</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td>Сердечник трансформатора (магнитопровод)</td>
+			<td>Переменное магнитное поле</td>
+			<td>Конструкция сердечника, его материал, масса, частота тока (~f<sup>1,3</sup>), магнитная индук-ция (~В<sup>2</sup>)</td>
+			<td>Опыт холостого хода</td>
+			<td>
+				<a class="imagetip" href="{% static 'pictures/ch9.png' %}" target="_blank"><img src="{% static 'pictures/ch9.png' %}" width="200px" height="100px"></a>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="6">
+				<table>
+					<tr>
+						<td>КПД трансформатора определяется как отношение активной мощности на выходе транс-форматора к активной мощности на выходе первичной обмотки:</td>
+					</tr>
+					<tr>
+						<td><img src="{% static 'pictures/ch.png' %}" ></td>
+						<td><img src="{% static 'pictures/ch10.png' %}"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<table height="20px"></table>
+</body>

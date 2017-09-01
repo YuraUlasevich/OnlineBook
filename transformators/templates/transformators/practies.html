@@ -1,0 +1,66 @@
+{% load static %}
+<!doctype html>
+
+<head>
+  <meta lang="ru">
+  <title>Теория</title>
+  <meta charset="utf-8">
+  <link href="{% static 'css/th2.css' %}" rel="stylesheet">
+</head>
+
+<body bgcolor="#7fffd4">
+  <table class="first" cellspacing="0" width="100%">
+    <td id="but2" width="20%" bgcolor="#949494">
+      <a id="con" href="{% url 'transformators:tests' %}">
+        <table align="center">
+          <td><p> <font size="5">Назад</font></p></td>
+        </table>
+      </a>
+    </td>
+    <td width="60%" align="center" bgcolor="#949494">
+      <h1 style="color:#7fffd4">Практика</h1>
+      <h2 style="color:#7fffd4">Нахождение коэффициента трансформации</h2>
+    </td>
+    <td id="but2" width="20%" bgcolor="#949494">
+      <a id="con" href="#" onclick="document.getElementById('form').submit(); return false;">
+        <table>
+          <td><p> <font size="5">Проверить</font></p></td>
+        </table>
+      </a>
+    </td>
+  </table>
+  <table height="20px"></table>
+  <table border="2" bgcolor=" #FFEB73" align="center" width="90%">
+    <col width="80%">
+    <tr>
+      <td align="center">Условие</td>
+      <td align="center">Ответ</td>
+    </tr>
+    <form id="form" method="post">
+      {% csrf_token %}
+      {% for question in questions %}
+        <tr>
+          <td align="justify">
+            <p>{{ question.text }}</p>
+          </td>
+          <td align="center">
+            <table width="100%" height="80%">
+              {% for answer in answers %}
+                {% if answer.question == question %}
+                <tr>
+                  <td>
+                      <p> {{ answer.name }}
+                        <input type="text" name="{{ question.pk }}{{ answer.pk }}">
+                      </p>
+                  </td>
+                </tr>
+                {% endif %}
+              {% endfor %}
+            </table>
+          </td>
+        </tr>
+      {% endfor %}
+    </form>
+  </table>
+  <table height="20px"></table>
+</body>

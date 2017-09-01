@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Авторизация</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style_autoriz.css' %}" />
+	<script type="text/javascript" src="{% static 'js/placeholder.js' %}"></script>
+</head>
+<body>
+	<form id="slick-login" method="post">
+		{% csrf_token %}
+		<label for="username"></label><input type="text" name="fio" class="placeholder" placeholder="Фамилия Имя">
+		<label for="group"></label><input type="text" name="group_number" class="placeholder" placeholder="Номер группы">
+		<input type="submit" value="НАЧАТЬ ТЕСТ">
+	</form>
+</body>

@@ -1,0 +1,66 @@
+{% load static %}
+<!doctype html>
+<head>
+    <meta lang="ru">
+    <title>Теория</title>
+    <meta charset="utf-8">
+     <link href="{% static 'css/th.css' %}" rel="stylesheet">
+</head>
+<body>
+	<table class="first" cellspacing="0"  width="100%">
+		<td id="but2"  width="20%" bgcolor="#949494" >
+			<a id="con" href="{% url 'transformators:pages' %}">
+				<table align="center">
+					<td><p> <font size="5">Назад</font></p></td>
+				</table>
+			</a>
+		</td>
+		<td   width="60%" align="center" bgcolor="#949494">
+			<h1 style="color:#7fffd4">Трансформаторы</h1>
+			<h1 style="color:#7fffd4">Устройство и рабочий процесс трансформатора</h1>
+		</td>
+		<td  id="but2" width="20%" bgcolor="#949494">
+				<a id="con" href="{% url 'transformators:tests' %}">
+					<table>
+						<td><p> <font size="5">Практика</font></p></td>
+					</table>
+				</a>
+		</td>
+	</table>
+	  <table height="20px"></table>
+    <table border="1"  width="90%" align="center">
+		<tr>
+			<td align="center" bgcolor=" #FFEB73">Назначение</td>
+            <td align="center" bgcolor=" #FFEB73">Условное графическое обозначение</td>
+            <td align="center" bgcolor=" #FFEB73">Устройство обмотки</td>
+            <td align="center" bgcolor=" #FFEB73">Устройство магнитопровода</td>
+            <td align="center" bgcolor=" #FFEB73">Номинальные данные</td>
+        </tr>
+        <tr>
+			<td>
+				<p>
+					<a class="imagetip" href="{% static 'pictures/21.jpg' %}" target="_blank">Трансформатор<span><img class="alignnone" src="{% static 'pictures/21.jpg' %}" /></span></a>
+				– это статическое электромагнитное устройство, предназначенное для преобразования переменного тока одного напряжения в переменный ток той же частоты, но другого напряжения без существенных потерь мощности.
+		        </p>
+		    </td>
+            <td><img src="{% static 'pictures/01.png' %}"></td>
+			<td><p>Обмотки трансформаторов выполняют из обмоточных проводов <a class="imagetip" href="{% static 'pictures/4.JPG' %}" target="_blank">круглого<span><img class="alignnone" src="{% static 'pictures/4.JPG' %}" width="200px" height="200px"></span></a> или <a class="imagetip" href="{% static 'pictures/3.jpg' %}" target="_blank">прямоугольного<span><img	class="alignnone" src="{% static 'pictures/3.jpg' %}" width="200px" height="200px"></span></a> сечения, изолированных кабельной бумагой или хлопчатобумажной тканью. 			Обмотка, подключаемая к источнику, считается <a class="imagetip" href="{% static 'pictures/6.gif' %}" target="_blank">первичной<span><img class="alignone" 		src="{% static 'pictures/6.gif' %}" width="200px" height="200px"></span></a>, а к потребителю – <a class="imagetip" href="{% static 'pictures/6.gif' %}" target="_blank">вторичной<span><img 				class="alignnone" src="{% static 'pictures/6.gif' %}" width="200px" height="200px"></span></a>. Обмотка, выполненная из провода меньшего сечения, имеющая больше витков и 	большее сопротивление, называется <a class="imagetip" href="{% static 'pictures/20.jpg' %}" target="_blank">обмоткой высшего напряжения (ВН)<span><img 			class="alignnone" src="{% static 'pictures/20.jpg' %}" width="200px" height="200px"></span></a>. У <a class="imagetip" href="{% static 'pictures/20.jpg' %}" target="_blank">обмотки низшего 				напряжения<span><img class="alignnone" src="{% static 'pictures/20.jpg' %}" width="200px" height="200px"></span></a> (НН) все наоборот.</p><p> По взаимному расположению о	бмотки разделяют на <a class="imagetip" href="{% static 'pictures/2.jpg' %}" target="_blank">концентрические<span><img class="alignnone" 						src="{% static 'pictures/2.jpg' %}" width="200px" height="200px"></span></a> (выполняют в виде цилиндров) и <a class="imagetip" href="{% static 'pictures/1.jpg' %}" 										target="_blank">чередующиеся<span><img class="alignnone" src="{% static 'pictures/1.jpg' %}" width="200px" height="200px"></span></a> (выполняют в виде отдельных секций 		(дисков).
+			</p></td>
+			<td><p>Выполняется из пластин или <a class="imagetip" href="{% static 'pictures/8.jpg' %}" target="_blank">лент<span><img class="alignone" 							src="{% static 'pictures/8.jpg' %}" width="200px" height="200px"></span></a> специальной холоднокатаной электротехнической стали толщиной 0,35-0,50 мм (для уменьшения 		потерь от вихревых токов). Листы покрываются  с двух сторон изоляционной пленкой (например, лаком). Часть магнитопровода, на 		которой размещается обмотка называется <a class="imagetip" href="{% static 'pictures/23.jpg' %}" target="_blank">стержнем<span><img class="alignnone" 			src="{% static 'pictures/23.jpg' %}" width="200px" height="200px"></span></a>, часть магнитопровода, которая замыкает стержни называется <a class="imagetip" href="{% static 'pictures/23.jpg' %}" 		target="_blank">ярмом<span><img class="alignnone" src="{% static 'pictures/23.jpg' %}" width="200px" height="200px"></span></a>.</p>
+				Типы магнитопроводов:
+            	<ul>
+					<li><a class="imagetip" href="{% static 'pictures/19.jpg' %}" target="_blank">стержневой<span><img class="alignnone" src="{% static 'pictures/19.jpg' %}" width="200px" height="200px"></span></a>;</li>
+					<li><a class="imagetip" href="{% static 'pictures/10.jpg' %}" target="_blank">броневой<span><img class="alignnone" src="{% static 'pictures/10.jpg' %}" width="200px" height="200px"></span></a>;</li>
+					<li><a class="imagetip" href="{% static 'pictures/15.jpg' %}" target="_blank">бронестержневой<span><img class="alignnone" src="{% static 'pictures/15.jpg' %}" width="200px" height="200px"></span></a>;</li>
+					<li><a class="imagetip" href="{% static 'pictures/16.jpg' %}" target="_blank">тороидальный<span><img class="alignnone" src="{% static 'pictures/16.jpg' %}" width="200px" height="200px"></span></a>.</li>
+                </ul>
+			</td>
+          	<td>Sн – номинальная мощность трансформатора (ВА или кВА);<br>
+                U1н – номинальное первичное напряжение;<br>
+                U2н – номинальное вторичное напряжение;<br>
+                I1н, I2н – номинальные токи первичной и вторичной обмоток.
+            </td>
+        </tr>
+	</table>
+
+</body>

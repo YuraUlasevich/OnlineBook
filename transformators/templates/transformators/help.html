@@ -1,0 +1,54 @@
+{% load static %}
+<!doctype html>
+<head>
+    <meta lang="ru">
+    <title>Теория</title>
+    <meta charset="utf-8">
+     <link href="{% static 'css/th2.css' %}" rel="stylesheet">
+</head>
+<body >
+	<a href="#" title="Вернуться к началу" class="topbutton"><img src="{% static 'pictures/up.png' %}" width="15%" height="15%"></a>
+	<table class="first" cellspacing="0"  width="100%">
+		<td id="but2"  width="20%" bgcolor="#949494" >
+			<a id="con" href="{% url 'transformators:index' %}">
+				<table align="center">
+					<td><p> <font size="5">Назад</font></p></td>
+				</table>
+			</a>
+		</td>
+		<td   width="60%" align="center" bgcolor="#949494">
+			<h1 style="color:#7fffd4">Устройство и рабочий процесс трансформатора</h1>
+		</td>
+		<td width="20%" bgcolor="#949494">
+		</td>
+	</table>
+	<table height="20px"></table>
+	<table bgcolor=" #FFEB73" width="70%"  align="center">
+		<tr>
+			<td  align="center">
+				<p>При открытии сайта, пользователь попадает в главное меню.</p>
+				<img src="{% static 'pictures/p1.png' %}" align="center">
+				<p>При нажатии на пункт меню “Теория ”, пользователю предлагается выбрать тему.</p>
+				<img src="{% static 'pictures/p2.png' %}" align="center">
+				<p></p>
+				<img src="{% static 'pictures/p3.png' %}" align="center">
+				<p>Далее пользователь может выбрать тему и перейти к просмотрк теоритического материала.</p>
+				<img src="{% static 'pictures/p4.png' %}" align="center">
+				<p></p>
+				<img src="{% static 'pictures/p5.png' %}" align="center">
+				<p>Нажав на кнопку “Назад”, можно вернуться обратно к списку тем. Нажав на кнопку “Практика”, можно перейти к прохождению практических заданий.</p>
+				<img src="{% static 'pictures/p6.png' %}" align="center">
+				<p>Повляется список тем, по котрым можно решать практические задания.</p>
+				<img src="{% static 'pictures/p7.png' %}" align="center">
+				<p>Выбрав одну из тем, пользователь попадает на страницу, где необходимо ввести данные, котрые понадобтся для авторизации пользователя.</p>
+				<img src="{% static 'pictures/p8.png' %}" align="center">
+				<p></p>
+				<img src="{% static 'pictures/p9.png' %}" align="center">
+				<p>Введя данные, пользователь переходит к практических заданиям.</p>
+				<img src="{% static 'pictures/p10.png' %}" align="center">
+				<p>Введя ответы, необходимо нажать на кнопку “Проверить”, а если пользователь ошибся при выборе темы, необходиом нажать на кнопку “Назад” для возврата к выбору темы практической работы. После проверки, появляются результаты прохождения практической работы.</p>
+			</td>
+		</tr>
+	</table>
+	<table height="20px"></table>
+</body>

@@ -1,0 +1,139 @@
+{% load static %}
+<!doctype html>
+<head>
+    <meta lang="ru">
+    <title>Теория</title>
+    <meta charset="utf-8">
+     <link href="{% static 'css/th2.css' %}" rel="stylesheet">
+</head>
+<body>
+	<a href="#" title="Вернуться к началу" class="topbutton"><img src="{% static 'pictures/up.png' %}" width="15%" height="15%"></a>
+    <table class="first" cellspacing="0"  width="100%">
+		<td id="but2"  width="20%" bgcolor="#949494" >
+			<a id="con" href="{% url 'transformators:pages' %}">
+				<table align="center">
+					<td><p> <font size="5">Назад</font></p></td>
+				</table>
+			</a>
+		</td>
+		<td   width="60%" align="center" bgcolor="#949494">
+			<h1 style="color:#7fffd4">Трансформаторы</h1>     
+			<h1 style="color:#7fffd4">Схема замещения и векторная диаграмма приведенного трансформатора, расчетные соотношения</h1>
+		</td>
+		<td  id="but2" width="20%" bgcolor="#949494">
+				<a id="con" href="{% url 'transformators:tests' %}">
+					<table>	
+						<td><p> <font size="5">Практика</font></p></td>
+					</table>
+				</a>
+		</td>
+	</table>
+    <table height="20px"></table>
+    <table border="2"  align="center" width="90%">
+		<tr bgcolor=" #FFEB73"> 
+			<td align="center">Схема работы трансформатора под нагрузкой</td>
+            <td align="center">Условно-логическая схема, иллюстрирующая физические процессы и взаимную связь отдельных величин в трансформаторе</td>
+            <td align="center">Основные уравнения трансформатора</td>
+        </tr>
+        <tr>
+            <td align="center">
+				<a class="imagetip" href="{% static 'pictures/ch3.png' %}" target="_blank"><img src="{% static 'pictures/ch3.png' %}" width="200px" height="100px"><span><img src="{% static 'pictures/ch3.png' %}" width="400px" height="200px"></span></a>
+            </td>
+             <td align="center">
+				 <a class="imagetip" href="{% static 'pictures/ch4.png' %}" target="_blank"><img src="{% static 'pictures/ch4.png' %}" width="200px" height="100px"><span><img src="{% static 'pictures/ch4.png' %}" width="400px" height="200px"></span></a>
+            </td>
+              <td align="center">
+                  <p>Уравнение магнитодви-жущих сил:<p><br>
+                  <img src="{% static 'pictures/f2.png' %}"><br>
+                  <p>Уравнение токов транс-форматора:</p><br>
+                  <img src="{% static 'pictures/f3.png' %}"><br>
+                  <img src="{% static 'pictures/f4.png' %}"><br>
+                  <p>Уравнения электрического состояния трансформатора:</p><br>
+                  <img src="{% static 'pictures/f5.png' %}"><br>
+                  <img src="{% static 'pictures/f6.png' %}">
+            </td>
+        </tr>
+        <tr padding="0">
+            <td align="left" padding="0">
+                <p>Пояснения:<br>
+                    u1 – напряжение, создаваемое синусоидальным источником;<br>
+                    i1 – ток в первичной обмотке;<br>
+                    i1w1 – магнитодвижущая сила (МДС) первичной обмотки;<br>
+                    Ф – основной магнитный поток;<br>
+                    Ф1d – магнитный поток рассеяния первичной обмотки;<br>
+                    е1d – ЭДС, вызванная магнитным потоком рассеяния первичной обмотки;<br>
+                    ЭМИ – электромагнитная индукция;<br>
+                    е1 – ЭДС первичной обмотки;<br>
+                    е2 – ЭДС вторичной обмотки;<br>
+                    Н – нагрузка;<br>
+                    i2 – ток вторичной обмотки;<br>
+                    i2w2 – МДС вторичной обмотки;<br>
+                    Ф2d - магнитный поток рассеяния вторичной обмотки;<br>
+                    е2d – ЭДС, вызванная магнитным потоком рассеяния вторичной обмотки.<br>
+                </p>
+            </td>
+        </tr>
+    </table> 
+    <table height="20px"></table>
+    <table width="90%" border="2"  align="center">
+        <tr bgcolor="#FFEB73">
+            <td align="center">Определение, назначение</td>
+            <td align="center">Эквивалентная схема и схема замещения</td>
+            <td align="center">Расчетные соотношения</td>
+            <td align="center">Векторные диаграммы при различных нагрузках</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Приведенный трансформатор – это трансформатор, который оказывает на цепь такое же влияние, как реальный трансформатор, но коэффициент  трансформации его равен единице.</p>
+                <p>Назначение – используется для расчета электрических цепей, содержащих трансформатор.</p>
+            </td>
+            <td>
+                <a class="imagetip" href="{% static 'pictures/ch5.png' %}" target="_blank"><img src="{% static 'pictures/ch5.png' %}" width="200px" height="100px"><span><img src="{% static 'pictures/ch5.png' %}" width="400px" height="200px"></span></a>
+                <a class="imagetip" href="{% static 'pictures/ch6.png' %}" target="_blank"><img src="{% static 'pictures/ch6.png' %}" width="200px" height="100px"><span><img src="{% static 'pictures/ch6.png' %}" width="400px" height="200px"></span></a>
+            </td>
+            <td>
+                <p>Назначение – используется для расчета электрических цепей, содержащих трансформатор.</p>
+                <img  align="center" src="{% static 'pictures/f7.png' %}" align="center"><br>
+                <img align="center" src="{% static 'pictures/f8.png' %}" align="center"><br>
+                <img src="{% static 'pictures/f9.png' %}">
+                <p>Приведенные сопротивления:</p>
+                <ul>
+                    <li>активное сопротивление вторичной обмотки<br>
+                        <img align="center" src="{% static 'pictures/f10.png' %}">
+                    </li>
+                    <li>индуктивное сопротивление рассеяния вторичной обмотки<br>
+                        <img align="center" src="{% static 'pictures/f11.png' %}">
+                        
+                    </li>
+                    <li>полное сопротивление нагрузки<br>
+                        <img  align="center" src="{% static 'pictures/f12.png' %}">
+                    </li>
+                </ul>
+            </td>
+            <td align="center">
+                <a class="imagetip" href="{% static 'pictures/f13.png' %}" target="_blank"><img src="{% static 'pictures/f13.png' %}" width="50px" height="100px"><span><img src="{% static 'pictures/f13.png' %}" width="100px" height="200px"></span></a><br>
+                <a class="imagetip" href="{% static 'pictures/ch7.png' %}" target="_blank"><img src="{% static 'pictures/ch7.png' %}" width="50px" height="100px"><span><img src="{% static 'pictures/ch7.png' %}" width="100px" height="200px"></span></a>
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <p>Пояснения:<br>
+                    R1 – активное сопротивление первичной обмотки<br>
+                    Х1 – индуктивное сопротивление первичной обмотки<br>
+                    R´2 – приведенное активное сопротивление вторичной обмотки<br>
+                    Х´2 – приведенное индуктивное сопротивление вторичной обмотки<br>
+                    Z´н – приведенное полное сопротивление нагрузки<br>
+                    R0 – активное сопротивление ветви намагничивания<br>
+                    Х0 – реактивное сопротивление ветви намагничивания<br>
+                    I0 – ток холостого хода<br>
+                    I1 – ток первичной обмотки<br>
+                    I´2 – ток вторичной обмотки приведенного трансформатора<br>
+                    U1 – напряжение источника питания<br>
+                    Е1 – ЭДС самоиндукции<br>
+                    U2 – напряжение на нагрузке приведенного трансформатора<br>
+                    Е2 – ЭДС вторичной обмотки приведенного трансформатора<br>
+                </p>
+            </td>
+        </tr>
+    </table> 
+</body>

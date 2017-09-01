@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Результат</title>
+</head>
+<body>
+  <h1 align="center">Результаты:</h1>
+  <table border="2" bgcolor=" #FFEB73" align="center" width="90%">
+    <col width="60%">
+	<col width="10%">
+	<col width="10%">
+	<col width="20%">
+    <tr>
+      <td align="center">Фамилия Имя</td>
+      <td align="center">Группа</td>
+      <td align="center">Оценка</td>
+      <td align="center">Неправильные ответы</td>
+    </tr>
+    {% for result in results %}
+      {% if cur_result == result %}
+        <tr style="font-weight: bold;">
+      {% else %}
+        <tr>
+      {% endif %}
+      <td align="justify">
+        <p>{{ result.fio }}</p>
+      </td>
+      <td align="center">
+        <p>{{ result.group_number }}</p>
+      </td>
+      <td align="center">
+        <p>{{ result.mark|default_if_none:"-" }}</p>
+      </td>
+      <td align="center">
+        <p>{{ result.wrong_answers|default_if_none:"-" }}</p>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <br />
+	<a href="{% url 'transformators:index' %}" style="display: block; text-align: center; text-decoration: none;">
+	<table width="90%" heigth="20%" bgcolor="#5691ef" align="center">
+		<tr>
+			<td>
+				<p >На главную</p>
+			</td>
+		</tr>
+	</table>
+	</a>
+</body>
+</html>

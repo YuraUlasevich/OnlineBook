@@ -1,0 +1,259 @@
+{% load static %}
+<!doctype html>
+<head>
+    <meta lang="ru">
+    <title>Теория</title>
+    <meta charset="utf-8">
+     <link href="{% static 'css/th2.css' %}" rel="stylesheet">
+</head>
+<body>
+	<a href="#" title="Вернуться к началу" class="topbutton"><img src="{% static 'pictures/up.png' %}" width="15%" height="15%"></a>
+	<table class="first" cellspacing="0"  width="100%">
+		<td id="but2"  width="20%" bgcolor="#949494" >
+			<a id="con" href="{% url 'transformators:pages' %}">
+				<table align="center">
+					<td><p> <font size="5">Назад</font></p></td>
+				</table>
+			</a>
+		</td>
+		<td   width="60%" align="center" bgcolor="#949494">
+			<h1 style="color:#7fffd4">Трансформаторы</h1>     
+			<h1 style="color:#7fffd4">Трансформаторы специального назначения</h1>
+		</td>
+		<td  id="but2" width="20%" bgcolor="#949494">
+				<a id="con" href="{% url 'transformators:tests' %}">
+					<table>	
+						<td><p> <font size="5">Практика</font></p></td>
+					</table>
+				</a>
+		</td>
+	</table>
+	 <table height="2px"></table>
+	<table height="10%" width="90%" bgcolor="#949494" >
+		<tr>
+			<td width="70%" align="center" bgcolor="#949494">
+				<h2 style="color:#7fffd4">Трансформаторы с плавным регулированием напряжения</h2>
+			</td>
+		</tr>
+	</table>
+	 <table height="20px"></table>
+	<table border="1"  width="90%" align="center">
+		<tr>
+			<td align="center" bgcolor=" #FFEB73">Название трансформатора</td>
+			<td align="center" bgcolor=" #FFEB73">Конструкция</td>
+			<td align="center" bgcolor=" #FFEB73">Особенности конструкции</td>
+			<td align="center" bgcolor=" #FFEB73">Принцип действия</td>
+		</tr>
+		<tr>
+			<td align="justify">Трансформатор с подвижным сердеч-ником</td>
+			<td><a class="imagetip" href="{% static 'pictures/ch11.png' %}" target="_blank"><img src="{% static 'pictures/ch11.png' %}" width="200px" height="100px"><span><img src="{% static 'pictures/ch11.png' %}" width="400px" height="200px"></span></a>
+			</td>
+			<td align="justify"><p>Первичная обмотка выполнена из двух ка-тушек, которые включены так, что создавае-мые ими магнитные потоки, направлены встречно друг другу. Внутри неподвижной части магнитопровода расположен подвиж-ный сердечник ПС со вторичной обмоткой.</p></td>
+			<td align="justify"><p>При среднем положении ПС во вторичной обмотке не наво-дится ЭДС, так как действие пер-вичных катушек взаимно ком-пенсируется.</p>
+				<p>Если перемещать ПС в одну из сторон во вторичной обмотке наводится  ЭДС ΔЕ. Т.е. при смещении ПС вправо или влево от положения равновесия во вто-ричной обмотке появляется напряжениеU2 = U1 ± ΔE, которое можно плавно регулировать.</p>
+			</td>
+		</tr>
+		<tr>
+			<td align="justify">Трансформатор, регулируемый подмагничиванием</td>
+			<td>
+				<a class="imagetip" href="{% static 'pictures/ch12.png' %}" target="_blank"><img src="{% static 'pictures/ch12.png' %}" width="200px" height="100px"><span><img src="{% static 'pictures/ch12.png' %}" width="400px" height="200px"></span></a>
+			</td>
+			<td align="justify"><p>Магнитная система трансформатора со-стоит из двух главных стержней и двух маг-нитных шунтов. На главных стержнях размещены 	первичная и вторичная обмотки, на стержнях магнитных шунтов - обмотка под-магничивания, состоящая из двух катушек.</p>
+				<p>Основной поток Ф замыкается через глав-ные стержни, а поток подмагничивания Ф<sub>пм</sub> - через магнитные шунты. Потоки рассеяния Ф<sub>σ1</sub> и Ф<sub>σ2</sub> первичной и вторичной обмоток, сдвинутые по фазе приблизительно на 180°, замыкаются в основном через магнитные шунты. Катушки обмотки подмагничивания соединены последовательно так, что создава-емые ими магнитные потоки складываются, а ЭДС, индуцируемые в них потоками рассея-ния Ф<sub>σ1</sub> и Ф<sub>σ2</sub>, взаимно компенсируются.</p>
+			</td>
+			<td><p>При отсутствии постоянного тока I<sub>пм</sub> в обмотке подмагничивания потоки Ф<sub>σ1</sub> и Ф<sub>σ2</sub> имеют макси-мальное, а основной поток Ф - минимальное значения. При этом вторичное напряжение U<sub>2</sub> мини-мальное. При прохождении по обмотке подмагничивающего то-ка магнитные шунты насыщают-ся и их магнитное сопротивление возрастает. Это приводит к уменьшению потоков Ф<sub>σ1</sub> и Ф<sub>σ2</sub>, увеличению потока Ф и повыше-нию напряжения U<sub>2</sub>. Регулируя подмагничивающий ток, можно плавно изменять вторичное напряжение U<sub>2</sub>.</p></td>
+		</tr>
+	</table>
+	<table height="20px"></table>
+	<table height="10%" width="90%" bgcolor="#949494" >
+		<tr>
+			<td width="70%" align="center" bgcolor="#949494">
+				<h2 style="color:#7fffd4">Сварочный трансформатор</h2>
+			</td>
+		</tr>
+	</table>
+	<table height="20px"></table>
+	<table border="1"  width="90%" align="center">
+		<tr>
+			<td align="center" bgcolor=" #FFEB73">Назначение</td>
+			<td align="center" bgcolor=" #FFEB73">Конструкция</td>
+			<td align="center" bgcolor=" #FFEB73">Способ регулирования тока сварки</td>
+			<td align="center" bgcolor=" #FFEB73">Коэффициент трансформации</td>
+		</tr>
+		<tr>
+			<td><a class="imagetip" href="{% static 'pictures/rty.png' %}" target="_blank">Сварочный трансформатор<span><img class="alignnone" height="100px" width="100-x" src="{% static 'pictures/rty.png' %}" width="200px" height="200px" align="" /></span></a> - это трансформатор, предназначенный для пони-жения напряжения от 220 В или 380 В до 60 - 70 В (дуго-вая электро-сварка) или до 14 В (контактная сварка). </td>
+			<td align="center" >
+				<a class="imagetip" href="{% static 'pictures/ch13.png' %}" target="_blank"><img src="{% static 'pictures/ch13.png' %}" width="200px" height="100px"><span><img src="{% static 'pictures/ch13.png' %}" width="400px" height="200px"></span></a>
+				<p align="left">
+					1 - первичная обмотка;<br>
+					2 - сердечник;<br>
+					3 - вторичная обмотка;<br>
+					4 - обмотка дросселя;<br>
+					5 - неподвижная часть сердечника;<br>
+					6 - подвижная часть сердечника;<br>
+					7 - винтовое соединение;<br>
+					а – воздушный зазор.<br>
+				</p>
+				<p align="justify">Сварочные трансформаторы рассчитаны на работу при боль-ших силах тока - порядка 300 А, а также и при режиме корот-кого замыкания. Сила тока короткого замыкания ограничива-ется путем увеличения индуктивного сопротивления обмот-ки. Это достигается благодаря использованию магнитных шунтов, включаемых в магнитопровод, или изменению воз-душного зазора в магнитопроводе индуктивной катушки, со-единенной последовательно с вторичной обмоткой транс-форматора.</p>
+			</td>
+			<td align="justify"><p>При увеличении воздушно-го зазора происходит умень-шение магнитного потока в сердечнике дросселя, что при-ведет к уменьшению его ин-дуктивности и индуктивного сопротивления. Это в свою очередь приведет к уменьше-нию полного сопротивления во вторичной цепи и увели-чению в ней силы тока.</p></td>
+			<td><img src="{% static 'pictures/f15.png' %}"></td>
+		</tr>
+	</table>
+	<table height="20px"></table>
+	<table height="10%" width="90%" bgcolor="#949494" >
+		<tr>
+			<td width="70%" align="center" bgcolor="#949494">
+				<h2 style="color:#7fffd4">Трансформаторы для выпрямительных устройств</h2>
+			</td>
+		</tr>
+	</table>
+	<table height="20px"></table>
+	<table border="0"  width="90%" align="center" height="600px">
+		<tr>
+			<td>
+				<table border="1" width="100%" height="100%">
+					<tr >
+						<td align="center" height="100px" bgcolor=" #FFEB73">
+							Особенности применения трансформаторов в выпрямительных устройствах
+						</td>
+					</tr>
+					<tr>
+						<td align="justify" height="500px">
+							<p>Типовая мощность трансформаторов всегда больше его выходной мощности. Из этого следует, что габариты и вес трансформаторов для выпря-мителей всегда больше, чем у трансформаторов такой же выходной мощности, но при синусоидальных токах в об-мотках.
+							В первичной и вторичной обмотках появляются токи высших гармоник, ухудшаю-щие эксплуатационные пока-затели трансформатора (КПД).
+							</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table border="1" width="100%" height="100%">
+					<tr>
+						<td align="center" height="100px" bgcolor=" #FFEB73">
+							Основные соотношения для выбора трансформаторов для выпрямительных устройств
+
+						</td>
+					</tr>
+					<tr>
+						<td align="justify" height="500px">
+							<p>SТ – типовая мощность
+								ST = 0,5 (S<sub>1н</sub> + S<sub>2н</sub>) = 0,5 (I<sub>1н</sub>U<sub>1н</sub> + I<sub>2н</sub>U<sub>2нM</sub>)
+							   КТ – коэффициент типовой мощно-сти
+							</p>
+							<img src="{% static 'pictures/f16.png' %}">
+							<p>Р<sub>dн</sub> – выходная мощность, т.е. мощность, поступающая в потребитель постоянного тока
+								Р<sub>dн</sub> = U<sub>dн</sub>I<sub>dн</sub>
+								К<sub>U</sub> – коэффициент напряжения
+								U<sub>2н</sub> = К<sub>U</sub>U<sub>dн</sub></p>
+
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table border="1" width="100%" height="600px">
+					<tr>
+						<td align="center" height="100px" bgcolor=" #FFEB73">
+							Схема выпрямления
+						</td>
+					</tr>
+					<tr>
+						<td align="justify" height="100px">
+							Однофазная однополупери-одная
+						</td>
+					</tr>
+					<tr>
+						<td align="justify" height="100px">
+							Однофазная двухполупериодная мостовая
+						</td>
+					</tr>
+					<tr>
+						<td align="justify" height="100px">
+							Однофазная двухполупери-одная с нулевым выводом
+						</td>
+					</tr>
+					<tr>
+						<td align="justify" height="100px">
+						Трехфазная с нулевым вы-водом	
+						</td>
+					</tr>
+					<tr>
+						<td align="justify" height="100px">
+						Трехфазная мостовая
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table border="1" width="100%" height="600px">
+					<tr>
+						<td align="center" height="100px" bgcolor=" #FFEB73">
+							Коэффициент типовой мощности
+						</td>
+					</tr>
+					<tr>
+						<td align="center"  height="100px">
+							3,09
+						</td>
+					</tr>
+					<tr>
+						<td align="center"  height="100px">
+							1,23
+						</td>
+					</tr>
+					<tr>
+						<td align="center"  height="100px">
+							1,48
+						</td>
+					</tr>
+					<tr>
+						<td align="center"  height="100px">
+						1,345	
+						</td>
+					</tr>
+					<tr>
+						<td align="center"  height="100px">
+						1,05
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table border="1" width="100%" height="600px">
+					<tr>
+						<td height="100px" bgcolor=" #FFEB73">
+							Коэффициент напряжения
+						</td>
+					</tr>
+					<tr>
+						<td align="center"  height="100px">
+							2,22
+						</td>
+					</tr>
+					<tr>
+						<td align="center"  height="100px">
+							1,11
+						</td>
+					</tr>
+					<tr>
+						<td align="center"  height="100px">
+							1,11
+						</td>
+					</tr>
+					<tr>
+						<td align="center"  height="100px">
+						0,855
+						</td>
+					</tr>
+					<tr>
+						<td align="center"  height="100px">
+						0,427
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<table height="20px"></table>
+</body>

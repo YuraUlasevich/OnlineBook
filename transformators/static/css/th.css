@@ -1,0 +1,42 @@
+html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+	overflow-x: hidden;
+}
+#con{
+    text-decoration: none;
+    color:aquamarine;
+}
+.imagetip span{
+    visibility: hidden;
+    position: absolute;
+    background: #fff;
+    box-shadow: -2px 2px 10px -1px #333; 
+    border-radius: 5px;	
+}
+.imagetip:hover span{
+    visibility: visible;
+}
+
+#but2{
+	width: 20%;
+   
+}
+#but2 a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-size: 30pt;
+  margin: auto;
+}
+#but2 :hover {
+  color: aquamarine;
+}
+
+#first{
+	width: 100%;
+}
